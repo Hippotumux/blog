@@ -1,7 +1,7 @@
 ---
-title: 從0開始的機器學習_3
+title: Deep Learning An Introduction for Applied Mathematicians
 # icon: material-symbols:add-notes-outline
-order: 3
+order: 4
 date: 2023-08-03
 category:
   - ML
@@ -20,8 +20,8 @@ tag:
 <!-- more -->
 
 ## 例子
-
-<!-- ![image](Posts/ML/NN/1.png) -->
+<!-- 
+<img src = "/Posts/ML/NN/1.png"> -->
 
 我們想要用一條線分類 O X ，之後將會利用基於 sigmoid function 的神經網路來找。
 
