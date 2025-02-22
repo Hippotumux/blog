@@ -1,1 +1,47 @@
 // place your custom styles here
+.vp-blog-hero-title {
+    color: #e0851d !important;
+    font-family: "Times New Roman";
+}
+
+.vp-site-name {
+    font-family: "Times New Roman";
+}
+
+.vp-blog-hero-description {
+    color: #f00505 !important; 
+    font-size: 1.2rem; 
+    font-weight: bold; 
+    text-align: center; 
+    opacity: 0.9;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2); 
+}
+
+body {
+    color: #aaa;
+}
+
+h1 {
+    color: #99cc66; /* 紅色 */
+}
+
+h2 {
+color: #99cc66; /* 藍色 */
+}
+
+h3 {
+color: #66ccff; /* 綠色 */
+}
+
+h4 {
+color: #ffcc00; /* 黃色 */
+}
+
+h5 {
+color: #cc66ff; /* 紫色 */
+}
+
+h6 {
+color: #999999; /* 灰色 */
+}
+

@@ -5,10 +5,15 @@ import theme from "./theme.js";
 export default defineUserConfig({
   base: "/blog/",
 
-  lang: "zh-CN",
-  title: "博客演示",
-  description: "vuepress-theme-hope 的博客演示",
-  
+  lang: "en-US",
+  title: "Hippotumux's Blog",
+  description: "Hippotumux's Blog",
+  head: [
+    [
+      'link',
+      {rel: 'icon', href: "Mylogo.jpg"},
+    ]
+  ],
   port: 7777,
   theme,
 

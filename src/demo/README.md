@@ -1,7 +1,7 @@
 ---
-title: 主要功能与配置演示
+title: Projects
 index: false
-icon: laptop-code
+icon: material-symbols:book-2-outline
 category:
   - 使用指南
 ---

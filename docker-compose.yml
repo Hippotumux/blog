@@ -1,0 +1,12 @@
+services:
+  vuepress:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "7777:7777" # 將容器的 8080 埠映射到主機
+    volumes:
+      - .:/app:delegated # 掛載 vuepress-starter 資料夾
+      - /app/node_modules # 不覆蓋容器內的 node_modules
+    working_dir: /app # 設定容器內的工作目錄
+    command: npm run docs:dev # 在 vuepress-starter 執行命令

@@ -4,69 +4,40 @@ import navbar from "./navbar.js";
 import sidebar from "./sidebar.js";
 
 export default hopeTheme({
-  hostname: "https://mister-hope.github.io",
+  //hostname: "https://mister-hope.github.io",
+  hostname: "https://hippotumux.github.io/blog/",
 
   author: {
-    name: "Mr.Hope",
-    url: "https://mister-hope.com",
+    name: "Hippotumux",
+    url: "https://hippotumux.github.io/blog/",
   },
 
-  logo: "https://theme-hope-assets.vuejs.press/logo.svg",
-
-  repo: "vuepress-theme-hope/vuepress-theme-hope",
+  logo: "/assets/images/Mylogo.jpg",
+  repo: "https://github.com/Hippotumux/blog",
 
   docsDir: "src",
 
   // 导航栏
   navbar,
-
+  themeColor: false,
+  darkmode: "enable",
   // 侧边栏
   sidebar,
 
   // 页脚
-  footer: "默认页脚",
+  footer: "Hippotumux's Blog",
   displayFooter: true,
 
   // 博客相关
   blog: {
-    description: "一个前端开发者",
+    description: "一個悠閒的大學生",
     intro: "/intro.html",
     medias: {
-      Baidu: "https://example.com",
-      BiliBili: "https://example.com",
-      Bitbucket: "https://example.com",
-      Dingding: "https://example.com",
-      Discord: "https://example.com",
-      Dribbble: "https://example.com",
-      Email: "mailto:info@example.com",
-      Evernote: "https://example.com",
-      Facebook: "https://example.com",
-      Flipboard: "https://example.com",
-      Gitee: "https://example.com",
-      GitHub: "https://example.com",
-      Gitlab: "https://example.com",
-      Gmail: "mailto:info@example.com",
-      Instagram: "https://example.com",
-      Lark: "https://example.com",
-      Lines: "https://example.com",
-      Linkedin: "https://example.com",
-      Pinterest: "https://example.com",
-      Pocket: "https://example.com",
-      QQ: "https://example.com",
-      Qzone: "https://example.com",
-      Reddit: "https://example.com",
-      Rss: "https://example.com",
-      Steam: "https://example.com",
-      Twitter: "https://example.com",
-      Wechat: "https://example.com",
-      Weibo: "https://example.com",
-      Whatsapp: "https://example.com",
-      Youtube: "https://example.com",
-      Zhihu: "https://example.com",
-      VuePressThemeHope: {
-        icon: "https://theme-hope-assets.vuejs.press/logo.svg",
-        link: "https://theme-hope.vuejs.press",
-      },
+      Discord: "http://discordapp.com/users/603194146261434368",
+      Facebook: "https://www.facebook.com/profile.php?id=100008989923059",
+      GitHub: "https://github.com/Hippotumux",
+      Gmail: "mailto:st6805972@gmail.com",
+      Youtube: "https://www.youtube.com/channel/UCMfnPVz3AkrcPIYSirUO0kQ",
     },
   },
 
@@ -82,7 +53,7 @@ export default hopeTheme({
 
   // 多语言配置
   metaLocales: {
-    editLink: "在 GitHub 上编辑此页",
+    editLink: "在 GitHub ",
   },
 
   // 如果想要实时查看任何改变，启用它。注: 这对更新性能有很大负面影响
@@ -121,11 +92,12 @@ export default hopeTheme({
     tabs: true,
     tasklist: true,
     vPre: true,
-
-    // 取消注释它们如果你需要 TeX 支持
-    // markdownMath: {
+    math: {
+      type: "katex", // 或 'mathjax'
+    },
+    // Math: {
     //   // 启用前安装 katex
-    //   type: "katex",
+    //   //type: "katex",
     //   // 或者安装 mathjax-full
     //   type: "mathjax",
     // },
