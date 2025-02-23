@@ -12,13 +12,13 @@ tag:
 
 ---
 
-## <font color="#FF0080">馬可夫決策 Markov decision process</font>
+## 馬可夫決策 Markov decision process
 
 馬可夫決策(MDP)是對完全可觀測的環境進行描述的，也就是觀測到的狀態內容完整地決定了決策需要的特徵，幾乎所有強化學習問題都可以轉化為MDP。
 
 
 
-###  <p style = "color:#00FFFF">馬可夫性 Markov Property</p>
+### 馬可夫性 Markov Property
 某一狀態信息包含了所有相關的歷史，只要當前狀態可知，所有的歷史信息都不再需要，當前狀態就可以決定未來，則認為該狀態具有馬可夫性。
 
 可以用下面的狀態轉移概率公式來描述馬可夫性： (狀態從s -> s'的機率)
@@ -34,7 +34,7 @@ $$P=\begin{bmatrix}
 \end{bmatrix}$$
 
 
-### <p style = "color:#00FFFF">馬可夫鏈 Markov Chain</p>
+### 馬可夫鏈 Markov Chain
 
 它是一個無記憶的隨機過程，可以用<S,P>表示，其中S是有限數量的狀態集，P是狀態轉移概率矩陣
 
@@ -80,7 +80,7 @@ $$P =  \begin{bmatrix}
 
 譜半徑 = 1
 
-### <p style = "color:#00FFFF">馬可夫獎勵過程Markov Reward Process</p>
+###馬可夫獎勵過程Markov Reward Process
 
 馬可夫獎勵過程，就是在馬可夫過程<S,P>基礎上，增加了獎勵R(獎勵函數)，和衰減係數$\gamma$，也就是<S,P,R,$\gamma$>
 S狀態下的獎勵是某一時刻(t)處在狀態s下，在下一個時刻(t+1)能獲的的獎勵期望:
@@ -94,7 +94,7 @@ $$R_s = E(R_{t+1}|S_t = s)$$
 下圖為獎勵過程的例子，加上了針對每個狀態的獎勵，但不涉及衰減係數的計算。
 ![](https://i.imgur.com/LgOMHwu.png)
 
-### <p style = "color:#00FFFF">收穫/回報/收益 return</p>
+###收穫/回報/收益 return
 
 
 $G_t$為在一個馬可夫獎勵鏈上從t時刻開始往後所有獎勵的衰減總和，公式如下:
@@ -103,7 +103,7 @@ $$G_t = R_{t+1} + \gamma R_{t+2} + \space ... \space = \sum_{k=0}^\infty{\gamma 
 其中，衰減係數體現了未來獎勵在當前的價值比例，$\gamma$ 接近0 代表注重 "較近的利益"，$\gamma$ 接近1 代表注重"遠期的利益"
 
 
-### <p style = "color:#00FFFF">價值函數 Value function</p>
+###價值函數 Value function
 
 
 價值函數給出了某一狀態或行為的長期價值，一個馬可夫獎勵過程的某一狀態的價值函數為"從該狀態開始"的馬可夫鏈收穫的期望:
@@ -118,10 +118,10 @@ $$v(s) = E(G_t|S_t = s)$$
 可以理解到，reward是針對"某一個狀態"，RL很多問題可以歸結為求狀態的價值問題。
 
 
-## <font color="#FF0080">馬可夫決策價值函數推導</font>
+## 馬可夫決策價值函數推導
 
 
-### <font color=#A5A552>公式 Bellman equation</font>
+### 公式 Bellman equation
 
 :::info
 嘗試用價值公式來推導看看能得到什麼
@@ -143,14 +143,14 @@ $\space E[R_{t+1} + \gamma v(S_{t+1}) | S_t = s]$
 $R_{t+1} + \gamma \sum_{s' \in S} P_{ss'} v(s')$
 
 
-### <font color=#A5A552>解釋</font>
+### 解釋
 
 ![](https://i.imgur.com/7zrQjhE.png)
 
 圖上有 $\gamma$ = 1 的各種狀態價值，狀態$C_3$的價值可以通過Pub和Pass價值以及他們之間的狀態轉移機率來計算:
 4.3 = -2 + 1.0 * (0.6 * 10 + 0.4 * 0.8)
 
-### <font color=#A5A552>Bellman equation的矩陣形式和求解</font>
+### Bellman equation的矩陣形式和求解
 
 => $v = R + \gamma Pv$
 
@@ -189,7 +189,7 @@ $v = (I - \gamma P)^{-1} R$
 
 
 
-### <p style = "color:#00FFFF">馬可夫決策過程 Markov Decision Process</p>
+###馬可夫決策過程 Markov Decision Process
 
 相較於馬可夫獎勵過程，馬可夫決定過程多了一個行為集合A，所以會是<S,A,P,R,$\gamma$>。看起來很類似獎勵過程，不過這裡的P和R都和具體的"行為A"對應，不像獎勵過程只對應"某個狀態"，A表示的是有限行為的集合，具體的表示如下:
 
@@ -204,7 +204,7 @@ $$P_s^a = E[R_{t+1} \space | \space S_t = s, A_t = a ]$$
 
 :::
 
-### <p style = "color:#00FFFF">策略Policy</p>
+###策略Policy
 
 策略$\pi$是機率集合或分布，其元素$\pi (a|s)$為對過程中的某一狀態s採取其可能的行為a的機率：
 $$\pi (a|s) = P[A_t = a \space | \space S_t = s]$$
@@ -226,7 +226,7 @@ $$R_s^{\pi} = \sum _{a\in A} \pi(a|s)R_s^a$$
 
 策略在MDP中相當於一個agent可以在某一個狀態時做出選擇，進而有形成各種馬可夫過程的可能，而且基於策略產生的每一個馬可夫過程是一個馬可夫獎勵過程，各過程之前的差別不同選擇產生的後續狀態以及對應不同的獎勵。
 
-### <p style = "color:#00FFFF">基於π的價值函數</p>
+###基於π的價值函數
 
 定義 $v_\pi(s)$是在基於策略$\pi$的"狀態價值函數"，表示從狀態s開始，遵循當前策略獲得的收穫期望值，表示如下:
 
@@ -240,7 +240,7 @@ $$q_\pi(s,a) = E_\pi (G_t \space | \space S_t = s,A_t = a)$$
 
 ![](https://i.imgur.com/0YENMzF.png)
 
-### <p style = "color:#00FFFF">Bellman期望方程</p>
+###Bellman期望方程
 
 可以改用下一個時刻狀態價值函數或行為價值函數來表達，如下:
 $$v_{\pi}(s) = E_{\pi}[R_{t+1}+\gamma v_{\pi}(S_{t+1})\space | \space S_t = s]$$
@@ -273,13 +273,13 @@ $$q_{\pi}(s,a) = R_s^a + \gamma \sum_{s' \in S}P_{ss'}^a \sum_{a\in A}\pi(a'|s)q
 7.4 = 0.5\*(1+0.2\*-1.3+0.4\*2.7+0.4\*7.4) + 0.5\*10
 ![](https://i.imgur.com/2ktNDXv.png)
 :::                         
-### <p style = "color:#00FFFF">Bellman期望方程矩陣形式</p>                                                               
+###Bellman期望方程矩陣形式                                                               
 $v_\pi = R^\pi + \gamma P^\pi v_\pi$
 $(I - \gamma P^\pi) v_\pi = R^\pi$
 $v_\pi = (I- \gamma P^\pi)^{-1} R^\pi$
                                                            
-## <font color="#FF0080">最優函數</font>
-### <p style = "color:#00FFFF">最優價值函數</p>
+## 最優函數
+###最優價值函數
 最優價值函數$v_*(s)$即為所有策略產生的狀態價值函數中，選取使狀態s價值最大的函數                                                                          
                                 
 $$v_* = max_\pi (v_\pi(s))$$
@@ -289,7 +289,7 @@ $$v_* = max_\pi (v_\pi(s))$$
 $$q_*(s,a) = max_\pi (q_\pi(s,a))$$                     
                           
 
-### <p style = "color:#00FFFF">最優策略</p>
+###最優策略
 對於任何狀態s，遵循策略$\pi$的價值不小於遵循策略$\pi^{'}$，則策略$\pi$優於策略$\pi^{'}$
                                   
 :::info             
@@ -300,7 +300,7 @@ $$q_*(s,a) = max_\pi (q_\pi(s,a))$$
 - 所有的最優策略具有相同的行為價值函數
 :::                          
 
-### <p style = "color:#00FFFF">尋找最優策略</p>
+###尋找最優策略
 
 可以通過最大化價值函數來找最優策略:
 
@@ -313,7 +313,7 @@ $$ \pi_*(a|s)\begin{cases}
 ![](https://i.imgur.com/1cyyQoa.png)
 :::                             
 
-### <p style = "color:#00FFFF">Bellman 最優方程</p>                                             
+###Bellman 最優方程                                             
                                 
 針對$v_*$ 一個狀態的最優價值等於從該狀態出發採取的所有行為所產生的行為價值中最大的那個行為價值，也就是:
                                     
@@ -336,7 +336,7 @@ bellman最優方程示例
 ![](https://i.imgur.com/y3ELD9r.png)
 :::
 
-### <p style = "color:#00FFFF">求解bellman最優方程</p>
+###求解bellman最優方程
 
 Bellman最優方程是非線性的，沒有固定的解決方案，通過一些迭代方法來解決例如:
 - Q learning-----[傳送門](https://hackmd.io/@HIPP0/S1sKnyQm3)

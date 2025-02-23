@@ -2,6 +2,7 @@
 home: true
 layout: BlogHome
 bgImage: "/assets/images/background.jpg"
+# bgImage: "/assets/images/intro.jpg"
 icon: house
 title: Home
 # heroImage: /assets/images/Mylogo.jpg
@@ -12,23 +13,23 @@ tagline: NCUMA Network Administrator | Math Major
 
 projects:
   - icon: folder-open
-    name: 项目名称
-    desc: 项目详细描述
-    link: https://你的项目链接
+    name: About Me
+    desc: 自我介紹
+    link: intro.html
 
   - icon: link
-    name: 链接名称
-    desc: 链接详细描述
-    link: https://链接地址
+    name: Project
+    desc: 專案連結
+    link: demo/
 
   - icon: book
-    name: 书籍名称
-    desc: 书籍详细描述
-    link: https://你的书籍链接
+    name: Posts
+    desc: 日常文章
+    link: Posts/
 
   - icon: newspaper
-    name: 文章名称
-    desc: 文章详细描述
+    name: 小遊戲
+    desc: 我做的小遊戲
     link: https://你的文章链接
 
 footer: 

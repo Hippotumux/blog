@@ -2,7 +2,7 @@
 title: Deep Learning An Introduction for Applied Mathematicians
 # icon: material-symbols:add-notes-outline
 order: 4
-date: 2023-08-03
+date: 2024-09-10
 category:
   - ML
 
@@ -20,8 +20,9 @@ tag:
 <!-- more -->
 
 ## 例子
-<!-- 
-<img src = "/Posts/ML/NN/1.png"> -->
+
+![](img/NN/1.png)
+
 
 我們想要用一條線分類 O X ，之後將會利用基於 sigmoid function 的神經網路來找。
 
@@ -37,7 +38,7 @@ $$\sigma'(x) = \sigma(x)(1-\sigma(x))$$
 
 可以改變為位移，和縮放，例如 $\sigma(3(x-5))$. 右移到 5 然後更加陡峭。
 
-![image](https://hackmd.io/_uploads/Hk8oXQ9_R.png)
+![](img/NN/2.png)
 
 可以利用 sigmoid function 設定精神元層，如果一個神經元為一個向量 $a$，其輸出到下一層則長成如下
 
@@ -54,7 +55,7 @@ $$\sigma(\sum_j w_{ij}a_j + b_i)$$
 
 ### 四層神經網路例子
 
-![image](https://hackmd.io/_uploads/BklLUmq_A.png)
+![](img/NN/3.png)
 
 從 Layer1 到 Layer2 用上述 sigmoid function 表示為
 
@@ -92,7 +93,7 @@ $\frac{1}{2}$ 是為了方便定義的 (可以看到平方微分會有個 2倍�
 
 最終目標達到
 
-![image](https://hackmd.io/_uploads/HJWyTQ5O0.png)
+![](img/NN/4.png)
 
 接下來就來介紹詳細的內容。
 
@@ -102,13 +103,13 @@ $\frac{1}{2}$ 是為了方便定義的 (可以看到平方微分會有個 2倍�
 
 上面提到的四層神經網路例子，會稱 Layer1 為 Input layer，Layer4 為 Output layer，中間的層則叫做 Hidden layer。 每一層的向量被稱為神經元 Neurons。
 
-![image](https://hackmd.io/_uploads/BklLUmq_A.png)
+![](img/NN/5.png)
 
 現在來轉換成一般形式，假設總共有 $L$ 層神經網路，第 $1$ 層為輸入層，第 $L$ 層為輸出層，假設第 $l$ 層為 $n_l$ 神經元，整個流程就是從 $\mathbb{R}^{n_1} \rightarrow \mathbb{R}^{n_l}$ 
 
 我們用 $W^{[l]} \in \mathbb{R}^{n_l \times n_{l-1}}$ 定義在 $l$ 層的權重矩陣。而 $w^{[l]}_{jk}$ 就是在 $l$ 層的神經元 $j$ 應用於第 $l-1$ 層神經元 $k$ 輸出的權重。 同樣的 $b^{[l]} \in \mathbb{R}^{n_l}$ 就是第 $l$ 層的偏差。
 
-![image](https://hackmd.io/_uploads/SJkroybFA.png)
+![](img/NN/6.png)
 
 ### 一般形式
 
@@ -261,9 +262,9 @@ $$\delta^{[l]} = \frac{\partial C}{\partial z_j^{[l]}}, for \space 1  \leq j \le
 
 假設 $x, y \in \mathbb{R}^n$ 定義為 $(x \odot y)_i = x_i y_i$，也就是說他的 Hadamard 乘積就是由對應的分量兩兩相乘起來。
 
-![image](https://hackmd.io/_uploads/HJGFikfYR.png)
+![](img/NN/7.png)
 
-![image](https://hackmd.io/_uploads/ryItjyzFC.png) [圖片來源](https://blog.csdn.net/xq151750111/article/details/121049396)
+![](img/NN/8.png)
 
 利用這種表示法，可以推出以下鍊式法則結果
 

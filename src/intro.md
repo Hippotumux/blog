@@ -4,8 +4,8 @@ icon: material-symbols:family-star
 date: 2025-02-22
 #heroImage: https://media.tenor.com/L4RL7MXfgaQAAAAC/chino-kafuu.gif
 cover: /assets/images/intro2.jpg
-star: false
-sticky: false
+star: true
+sticky: true
 category:
   - diary
 tag:
@@ -153,9 +153,9 @@ tag:
 &nbsp;&nbsp;&nbsp;&nbsp; ⌨︎ **10/2022 - _CURRENT_**
 &nbsp;&nbsp;&nbsp;&nbsp; ➤ 中央大學 競程, Taiwan
 
-- 每週會有一天五小時的團練，學習到了很多艱深的算法，如 FFT、NTT。
+- 每週會有一天五小時的團練，學習到了很多艱深的算法，如 FFT、NTT、Automata 等。
 - 比賽上我主要負責數學問題以及 coding。
-- 取得 2024 NCPC 佳作、2024 TOPC 銀牌、2024 ICPC 銀牌
+- 取得 2024 NCPC 佳作、2024 TOPC 銀牌、2024 ICPC 銅牌
 
 
 
@@ -205,6 +205,12 @@ tag:
     </div>
 </div>
 
+<div class="skill-container">
+    <div class="skill-title"> 網路 </div>
+    <div class="progress-bar">
+        <div class="progress-fill" style="width: 84%;"></div>
+    </div>
+</div>
 
 <div class="skill-container">
     <div class="skill-title">網頁前端 <small>(Html、Vue3、laravel、CSS)</small> </div>
@@ -217,6 +223,7 @@ tag:
 
 - MATLAB, java, Rust, LATEX
 - SQL, Laravel, vue, TypeScript, CSS, Docker
+- 有架設 GPU 伺服器、NAS 伺服器的經驗，Switch 等網路設備。
 
 <!-- ## 你所不知道的祕密
 

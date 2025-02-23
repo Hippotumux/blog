@@ -5,14 +5,14 @@ export default sidebar({
     "",
     {
       text: "Projects",
-      icon: "laptop-code",
+      icon: "material-symbols:book-2-outline",
       prefix: "demo/",
       link: "demo/",
       children: "structure",
     },
     {
       text: "Posts",
-      icon: "book",
+      icon: "material-symbols:add-notes-outline",
       prefix: "Posts/",
       link: "Posts/",
       children: "structure",

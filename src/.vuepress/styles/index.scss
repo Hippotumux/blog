@@ -1,7 +1,10 @@
 // place your custom styles here
 .vp-blog-hero-title {
-    color: #e0851d !important;
+    // color: #d2e9e8 !important;
+    color: #ebf3f3e7 !important;
     font-family: "Times New Roman";
+    font-size: 3rem; 
+    margin-top: -80px;
 }
 
 .vp-site-name {
@@ -9,39 +12,74 @@
 }
 
 .vp-blog-hero-description {
-    color: #f00505 !important; 
-    font-size: 1.2rem; 
+    // color: #e2ebea !important; 
+    color: #ffffffd5 !important;
+    margin-top: -5px; /* 調整數值，負值往上移 */
+    
+    font-size: 1.5rem; 
     font-weight: bold; 
     text-align: center; 
     opacity: 0.9;
-    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2); 
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.0); 
+
+    border-top: 2px solid #ffffff6e; /* 白色橫線，2px 厚度 */
+    padding-top: 0px; /* 讓文字與線條有點間距 */
 }
+
+.vp-blog-mask{
+    opacity: 0.6; /* 0.0（完全透明）到 1.0（完全不透明） */
+    // width: 100%; /* 或指定固定寬度 */
+    // height: 100%;
+    background-position: calc(50% + 20px) center;
+    
+}
+
+.vp-icon.vp-project-icon {
+    color: #ffffffd5; /* 設定為紅色 */
+}
+
+.vp-project-card{
+    background: #256a85d5 !important;
+}
+
+.vp-blog-mask img {
+    width: 100%; /* 或指定固定寬度 */
+    height: 100%;
+    object-fit: cover; /* 圖片填滿區塊 */
+    object-position: center; /* 圖片置中 */
+}
+
 
 body {
     color: #aaa;
 }
 
 h1 {
-    color: #99cc66; /* 紅色 */
+    color: #99cc66; 
 }
 
 h2 {
-color: #99cc66; /* 藍色 */
+color: #e9a065e5; 
+border-bottom: 1px solid #b47d3a !important; /* 橙色線條 */
+// color: #2dc9d4; 
 }
 
 h3 {
-color: #66ccff; /* 綠色 */
+color: #e6e7a3de;
 }
 
 h4 {
-color: #ffcc00; /* 黃色 */
+color: #c9c0c0; 
 }
 
 h5 {
-color: #cc66ff; /* 紫色 */
+color: #aaa; 
 }
 
 h6 {
-color: #999999; /* 灰色 */
+color: #aaa; 
 }
 
+// p {
+// color: #aaa
+// }
