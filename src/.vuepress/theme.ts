@@ -23,7 +23,6 @@ export default hopeTheme({
   darkmode: "enable",
   // 侧边栏
   sidebar,
-
   // 页脚
   footer: "Hippotumux's Blog",
   displayFooter: true,
