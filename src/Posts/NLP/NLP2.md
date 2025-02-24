@@ -64,7 +64,7 @@ Word sense ambiguity (詞意歧義)指的是一個詞在不同的語境中可能
 
 ### 應用
 
-![image](img/NLP2/1.png)
+![](img/NLP2/1.png)
 
 
 
@@ -148,7 +148,7 @@ $$
 
 - 詞項 $w_j$ 在文檔 $d_i$ 中的重要性由其 TF 和 IDF 的乘積決定。TF 評估詞項在文檔中的相對頻率，而 IDF 衡量詞項在整個語料庫中區分文檔的能力。
 
-![image](img/NLP2/2.png)
+![](img/NLP2/2.png)
 
 ## BM25
 
@@ -211,7 +211,7 @@ $b$：控制文檔長度的規範化程度。$b=1$ 表示完全規範化，$b=0$
 
 Bengio 等人在 2003 年發表的重要論文《A Neural Probabilistic Language Model》
 
-![image](img/NLP2/3.png)
+![](img/NLP2/3.png)
 
 ### 分布式詞特徵向量：
 
@@ -230,7 +230,7 @@ Bengio 等人在 2003 年發表的重要論文《A Neural Probabilistic Language
 舉個例子，狗狗跟貓咪會比卡車來的接近。
 餵食貓咪，可以用狗狗來取代，但用同樣是名詞的卡車就非常的不合適。
 
-![image](img/NLP2/4.png)
+![](img/NLP2/4.png)
 
 ## Latent Semantic Indexing (LSI)
 
@@ -307,21 +307,21 @@ LSI 是自然語言處理和信息檢索中一個強大的工具，被廣泛用�
 
 1. **輸入向量選擇**
    - 輸入向量從隱藏層矩陣中選擇輸入嵌入。
-![image](img/NLP2/5.png)
+![](img/NLP2/5.png)
 2. **Softmax 運算**
    - 通過與輸出矩陣的乘法操作後應用 Softmax，創建一個詞彙表上的概率分佈。
    - 對於上下文中的詞這個概率應該高，對於其他詞則低。
-![image](img/NLP2/6.png)
+![](img/NLP2/6.png)
 
 
 
 ### 損失函數
 
-![image](img/NLP2/7.png)
+![](img/NLP2/7.png)
 
 
 - 交叉熵用來衡量概率分佈之間的距離。
-![image](img/NLP2/8.png)
+![](img/NLP2/8.png)
 
 ### GloVe（全局向量）
 - word2vec 在學習相似性和線性規律方面表現出色。

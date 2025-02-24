@@ -76,16 +76,16 @@ tag:
 
 ### RNN Sequence Generation 過程
 
-![image](img/NLP4/1.png)
+![](img/NLP4/1.png)
 
 **過程**：`Input` → `Embedding(連續向量化)` → `RNN` → `softmax(詞彙機率)` → `得到 Output` → `Output 成 input 繼續做` 
 
 
 ### RNN 機器翻譯
 
-![image](img/NLP4/2.png)
+![](img/NLP4/2.png)
 
-![image](img/NLP4/3.png)
+![](img/NLP4/3.png)
 
 ### 編碼器-解碼器 RNN
 
@@ -133,7 +133,7 @@ tag:
 
 #### LSTM 架構
 
-![image](img/NLP4/4.png)
+![](img/NLP4/4.png)
 
 
 LSTM 通過引入幾個關鍵組件改進了傳統 RNN 的結構，包括：
@@ -195,7 +195,7 @@ Attention 即為注意力，Attention-based Model 其實就是一個相似性的
 
 #### 注意力機制的工作原理
 
-![image](img/NLP4/5.png)
+![](img/NLP4/5.png)
 
 
 - **加權摘要（Weighted Summarize）**：
@@ -217,7 +217,7 @@ Attention 即為注意力，Attention-based Model 其實就是一個相似性的
 
 ### 注意力機制：不使用 RNN 的實現方式
 
-![image](img/NLP4/6.png)
+![](img/NLP4/6.png)
 
 
 此圖展示了不依賴於遞歸神經網絡（RNN）的注意力機制，通常被稱為自注意力（Self-Attention）或 Transformer 注意力機制。以下是它與基於 RNN 的注意力機制的主要不同之處：
