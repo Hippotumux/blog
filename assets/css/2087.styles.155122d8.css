@@ -1,0 +1,19 @@
+
+.matrix-rain[data-v-38b106f8] {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  background: #000;
+  overflow: hidden;
+  z-index: 9999; /* 在背景層，如需蓋住全部可改成 9999 */
+}
+canvas[data-v-38b106f8] {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
