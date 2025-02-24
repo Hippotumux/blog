@@ -165,4 +165,7 @@ Output Parsers 負責取得 LLM 的輸出，並將其轉換為更合適的格式
 
 [簡報連結](https://www.canva.com/design/DAGfIrOJlM4/qgJlwt6cNVNPlhUUdtR1WA/edit?utm_content=DAGfIrOJlM4&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton)
 
-<!-- <PDF url="https://theme-hope-assets.vuejs.press/files/sample.pdf" /> -->
+
+<!-- <PDF url="//theme-hope-assets.vuejs.press/files/sample.pdf" />
+
+<PDF url="/assets/images/1.pdf" /> -->
