@@ -28,9 +28,9 @@ projects:
     link: Posts/
 
   - icon: newspaper
-    name: 小遊戲
-    desc: 我做的小遊戲
-    link: https://你的文章链接
+    name: 巴拉巴拉
+    desc: cool
+    link: /cool.html
 
 footer: 
 ---
