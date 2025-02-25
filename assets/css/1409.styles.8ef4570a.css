@@ -1,5 +1,5 @@
 
-.matrix-rain[data-v-187dca00] {
+.matrix-rain[data-v-6719c903] {
   position: fixed;
   top: 0;
   left: 0;
@@ -11,7 +11,7 @@
   overflow: hidden;
   z-index: 9999; /* 在背景層，如需蓋住全部可改成 9999 */
 }
-canvas[data-v-187dca00] {
+canvas[data-v-6719c903] {
   display: block;
   width: 100%;
   height: 100%;
