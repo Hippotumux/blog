@@ -16,7 +16,9 @@ export default defineUserConfig({
   ],
   port: 7777,
   theme,
-
+  // alias: {
+  //   '/': '/blog'  // 訪問根路徑時會重定向到 /blog
+  // }
   // 和 PWA 一起启用
   // shouldPrefetch: false,
 });
