@@ -13,6 +13,7 @@ next: false
 comment: false
 footer: false
 backtotop: false
+article: false
 ---
 
 
