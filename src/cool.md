@@ -21,7 +21,7 @@ backtotop: false
 </div>
 
 
-<script>
+<script> 
 export default {
   name: 'MatrixRain',
   data() {
