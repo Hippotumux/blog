@@ -10,7 +10,6 @@ tag:
   - note
   - theorem
   - PDF
-
 ---
 
 

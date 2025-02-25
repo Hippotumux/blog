@@ -1,6 +1,6 @@
 ---
 home: false
-title: false
+title: Cool
 navbar: false
 sidebar: false
 breadcrumb: false
@@ -52,13 +52,22 @@ export default {
 
     // 監聽視窗大小改變，及時更新畫布
     window.addEventListener('resize', this.handleResize);
+    canvas.addEventListener('click', this.redirectToHome);
+    // setTimeout(() => {
+    //   window.location.href = '/blog'; // 這裡是返回主頁面的路徑
+    // }, 5000); // 10秒後執行
   },
   beforeDestroy() {
     // 組件卸載前，清除動畫與監聽
     clearInterval(this.animationInterval);
     window.removeEventListener('resize', this.handleResize);
+    const canvas = this.$refs.matrixCanvas;
+    canvas.removeEventListener('click', this.redirectToHome); // 移除點擊事件監聽
   },
   methods: {
+    redirectToHome() {
+      window.location.href = '/blog'; // 跳轉到主頁面
+    },
     // 調整畫布尺寸符合視窗
     resizeCanvas() {
       const canvas = this.$refs.matrixCanvas;
