@@ -9,6 +9,7 @@ export default sidebar({
       prefix: "demo/",
       link: "demo/",
       children: "structure",
+      
     },
     {
       text: "Posts",
@@ -16,8 +17,31 @@ export default sidebar({
       prefix: "Posts/",
       link: "Posts/",
       children: "structure",
-      collapsible: false,
+      // children: [
+      //   {
+      //     text: "ML",
+      //     prefix: "ML/",
+      //     // link: "ML/",
+      //     // children: "structure"
+      //     children: "structure",
+      //     collapsible: true,
+      //   },
+      //   {
+      //     text: "NLP",
+      //     prefix: "NLP/",
+      //     // link: "NLP/",
+      //     children: "structure"
+      //   },
+      //   {
+      //     text: "RL",
+      //     prefix: "RL/",
+      //     // link: "RL/",
+      //     children: "structure"
+      //   },
+      // ],
     },
     "intro",
   ],
 });
+
+
