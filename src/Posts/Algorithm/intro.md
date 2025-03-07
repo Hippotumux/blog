@@ -2,7 +2,7 @@
 title: 演算法介紹
 # icon: material-symbols:add-notes-outline
 order: 2
-date: 2024-01-02
+date: 2023-01-02
 category:
   - Algorithm
 
