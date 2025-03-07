@@ -2,7 +2,7 @@
 title: 基礎數論I
 # icon: material-symbols:add-notes-outline
 order: 9
-date: 2023-01-02
+date: 2023-01-09
 category:
   - Algorithm
 

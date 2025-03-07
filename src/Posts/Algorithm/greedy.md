@@ -2,7 +2,7 @@
 title: 貪婪法
 # icon: material-symbols:add-notes-outline
 order: 5
-date: 2023-01-02
+date: 2023-01-05
 category:
   - Algorithm
 

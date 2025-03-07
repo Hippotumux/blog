@@ -2,7 +2,7 @@
 title: 動態規劃II
 # icon: material-symbols:add-notes-outline
 order: 8
-date: 2023-01-02
+date: 2023-01-08
 category:
   - Algorithm
 

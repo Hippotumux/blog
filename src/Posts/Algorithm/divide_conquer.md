@@ -2,7 +2,7 @@
 title: 分治法
 # icon: material-symbols:add-notes-outline
 order: 6
-date: 2023-01-02
+date: 2023-01-06
 category:
   - Algorithm
 

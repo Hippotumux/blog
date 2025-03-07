@@ -19,7 +19,7 @@ tag:
 在開始介紹 RAG 前，我們先來討論一下 AI 幻覺。
 
 
-<!--more-->
+<!-- more -->
 
 ## 幻覺 (Hallucination)
 
