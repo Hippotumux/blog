@@ -15,7 +15,7 @@ tag:
 
 KAN (Kolmogorov–Arnold Networks) 為從 Kolmogorov-Arnold 表示定理受到的啟發，也因此取名為 KAN。論文中說明此為一種替代 MLP 的方法，和 MLP 不同的在於， MLP 在節點 "神經元" 上使用固定激活函數不同，KANs 則在邊 "權重" 上具備可學習的激活函數。 KANs 完全不使用線性權重——每個權重參數都被一個以 spline (樣條函數) 參數化的單變量函數所取代。
 
-<!--more-->
+<!-- more -->
 
 從結構上來說，和 MLP 的思路挺類似的
 

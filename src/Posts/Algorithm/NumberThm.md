@@ -22,7 +22,7 @@ tag:
 - 中國剩餘定理(Chinese remainder theorem, CRT)
 - 排容定理
 - 鴿籠原理 :dove_of_peace:
- <!--more-->
+<!-- more -->
 
 ## 快速冪
 

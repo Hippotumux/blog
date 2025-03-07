@@ -13,10 +13,11 @@ tag:
 
 # c++ 基礎能力
 
-
 ### 編譯器
 不是使用自己的電腦的話，推薦使用[線上c++](https://www.onlinegdb.com/online_c++_compiler) 隨時都可用。
 推薦 vscode，環境變數要設定並且安裝 mingw
+
+<!-- more -->
 
 ## 變數的宣告與指派
 
