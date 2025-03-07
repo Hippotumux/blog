@@ -7,4 +7,6 @@ category:
 article: false
 ---
 
+### 此作者很懶，還沒搬運過來此 blog。
+
 <Catalog />
