@@ -499,4 +499,3 @@ https://github.com/KindXiaoming/pykan
 - https://en.wikipedia.org/wiki/Kolmogorov%E2%80%93Arnold_representation_theorem
 https://blog.csdn.net/jarodyv/article/details/138751803
 - https://blog.csdn.net/weixin_44397852/article/details/108836781
-- ChatGPT
